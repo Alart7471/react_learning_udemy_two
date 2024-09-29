@@ -1,0 +1,20 @@
+.categories {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .category-btn {
+    background-color: #008cff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .category-btn:first-child {
+    background-color: orange;
+  }
+  
