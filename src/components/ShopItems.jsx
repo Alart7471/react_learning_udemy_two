@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import './style/ShopItems.scss';
 
-function ShopItems({ choosedCategory }) {
+function ShopItems({ selectedCategory }) {
 
     const [products, setProducts] = useState([]);
 
@@ -13,14 +13,19 @@ function ShopItems({ choosedCategory }) {
     async function getShopItems() {
         console.log("getShopItems called");
         await axios
-        .get("http://localhost:8000/api/shop/items")
-        .then((response) => {
-            setProducts(response.data);
-        });
+            .get("http://localhost:8000/api/shop/items")
+            .then((response) => {
+                setProducts(response.data);
+            });
     }
 
     function renderItems() {
-        return products.map((item, i) => {
+        // Фильтруем товары по выбранной категории, если категория выбрана
+        const filteredProducts = selectedCategory 
+            ? products.filter(item => item.category === selectedCategory) 
+            : products;
+
+        return filteredProducts.map((item, i) => {
             return <ShopItem key={i} item={item} />
         });
     }
@@ -39,7 +44,9 @@ function ShopItems({ choosedCategory }) {
     }
 
     return (
-        <div className="products">{renderItems()}</div>
+        <div className="products">
+            {renderItems()}
+        </div>
     );
 }
 

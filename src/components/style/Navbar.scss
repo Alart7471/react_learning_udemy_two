@@ -1,5 +1,10 @@
-.menu li {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #000;
-  }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    max-width: 565px;
+    overflow: hidden;
+    padding-bottom: 12px;
+    position: relative;
+    width: 100%;
+    margin-top: 16px;
+}

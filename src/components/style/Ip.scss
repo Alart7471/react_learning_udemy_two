@@ -1,0 +1,55 @@
+.ip-server {
+	align-items: center;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	padding: 0 24px 27px;
+	position: relative;
+}
+
+.ip-server:before {
+	background: #e9f0fa;
+	border-radius: 33px;
+	bottom: 0;
+	content: "";
+	height: 217px;
+	position: absolute;
+	width: 100%;
+}
+
+.ip-server>span {
+	color: rgba(0,0,0,.5);
+	font-size: 19px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 23px;
+	margin-bottom: 3px;
+	position: relative;
+	z-index: 10;
+}
+
+.ip-server-val {
+	display: flex;
+	position: relative;
+	z-index: 10;
+}
+
+.ip-server-val>p {
+	color: #000;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 20px;
+	margin: 0 3px;
+	text-transform: uppercase;
+}
+
+.icon-fire {
+	background: url(http://localhost:8000/api/files/icon-fire.png);
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 22px;
+	margin-top: -3px;
+	width: 22px;
+}

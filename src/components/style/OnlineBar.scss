@@ -1,8 +1,9 @@
 .status {
-    display: flex;
     align-items: center;
-  }
-  
-  .ip {
-    margin-left: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px 27px;
+    position: relative;
+    background-color: aqua;
   }

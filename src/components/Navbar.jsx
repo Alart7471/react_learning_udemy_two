@@ -1,18 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './style/Navbar.scss'
+import Button from '@mui/material/Button';
 
 export default function Navbar() {
     return ( 
-        <div className="navbar">
-            <h1 className="logo"><Link to="/">SomeProject</Link></h1>
-            <nav className="menu">
-                <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/login">Login</Link></li>
-                    <li><Link to="/register">Register</Link></li>
-                </ul>
+        <>
+            <nav className="navbar">
+                <Link to="/">
+                    <Button variant="contained">Home</Button>
+                </Link>
+                <Link to="/login">
+                    <Button variant="outlined" href="#outlined-buttons">
+                        Login
+                    </Button>
+                </Link>
+                <Link to="/register">
+                    <Button variant="contained">Register</Button>
+                </Link>
             </nav>
-        </div>
+        </>
     );
 }

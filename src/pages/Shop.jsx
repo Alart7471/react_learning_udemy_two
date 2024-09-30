@@ -6,19 +6,22 @@ import '../components/style/Shop.scss';
 function Shop() {
 
     //брать из категорий выбранную и передавать в ShopItems
-    const [choosedCategory, setChoosedCategory] = useState(0);
+    const [selectedCategory, setSelectedCategory] = useState("prv");
 
+    const handleCategorySelect = (category) => {
+        setSelectedCategory(category);
+      };
     return (
         <div>
             <h1>Shop</h1>
             <div className="shop-container">
                 <div className="left">
                     left
-                    <Categories />
+                    <Categories onCategorySelect={handleCategorySelect}/>
                 </div>
                 <div className="right">
                     right
-                    <ShopItems />
+                    <ShopItems selectedCategory={selectedCategory}/>
                 </div>
             </div>
         </div>
