@@ -1,6 +1,13 @@
-.footer-content{
-    background-color: #36f1b3;
-    margin-top: 82px;
-    padding-bottom: 42px;
-    padding-top: 42px;
+.footer-content {
+    width: 100%;
+    background: linear-gradient(90deg, #232526, #414345); /* Темный градиент */
+    color: white; /* Белый текст */
+    text-align: center; /* Центрирование текста */
+    padding: 42px 0; /* Внутренние отступы сверху и снизу */
+    position: relative;
+    bottom: 0;
+    border-radius: 20px; /* Закругленные углы */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.2); /* Тень */
 }
+
+

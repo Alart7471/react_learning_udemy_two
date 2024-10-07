@@ -6,9 +6,10 @@ import { Link } from "react-router-dom";
 import './style/Header.scss';
 
 function Header() {
+    const serverName = process.env.REACT_APP_SERVERNAME;
     return (
         <header className="header">
-            <Link to="/" className="logo">SomeProject</Link>
+            <Link to="/" className="logo">{serverName}</Link>
             <div className="header-content">
                 <Navbar />
                 <OnlineBar />
