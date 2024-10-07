@@ -46,7 +46,7 @@ function HomePage() {
                     </>    
                 )  // Если никнейм есть, показываем Shop
                 : (
-                    <>123
+                    <>
                         <Shop isHidden={true}  />
                         {isModalOpen && (
                             <WelcomeModal 
