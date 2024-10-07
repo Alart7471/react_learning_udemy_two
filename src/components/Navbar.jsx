@@ -8,15 +8,15 @@ export default function Navbar() {
         <>
             <nav className="navbar">
                 <Link to="/">
-                    <Button variant="contained">Home</Button>
+                    <Button variant="contained">Главная</Button>
                 </Link>
-                <Link to="/login">
+                <Link to="/faq">
                     <Button variant="outlined" href="#outlined-buttons">
-                        Login
+                        FAQ
                     </Button>
                 </Link>
-                <Link to="/register">
-                    <Button variant="contained">Register</Button>
+                <Link to="/about">
+                    <Button variant="contained">О нас</Button>
                 </Link>
             </nav>
         </>

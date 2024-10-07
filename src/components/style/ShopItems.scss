@@ -1,34 +1,53 @@
 .products {
-    display: grid;
-    gap: 22px;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    margin-top: 42px;
-  }
-  
-  .product-card {
-    background: #fff;
-    border-radius: 24px;
-    cursor: pointer;
-    padding: 14px 17px 30px;
-    position: relative;
-  }
-  
-  .product-card img {
-    width: 100%;
-    border-radius: 10px;
-    // width: 128;
-    // height: 128;
-  }
-  
-  .product-card h3 {
-    margin-top: 10px;
-  }
-  
-  .product-card button {
-    background-color: #008cff;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+  display: grid;
+  gap: 22px;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  margin-top: 42px;
+  background-color: #f0f0f0; /* Потемнее фон для блока товаров */
+  padding: 20px;
+  border-radius: 20px; /* Закругленные края блока */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Небольшая тень */
+}
+
+.product-card {
+  background-color: #d9d9d9; /* Более тёмный фон для карточек */
+  border-radius: 16px;
+  cursor: pointer;
+  padding: 20px;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Анимация при наведении */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Тень карточки */
+}
+
+.product-card:hover {
+  transform: translateY(-5px); /* Эффект подъема при наведении */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Более выраженная тень при наведении */
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.product-card h3 {
+  margin-top: 10px;
+}
+
+.product-card button {
+  background-color: #008cff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.products-empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

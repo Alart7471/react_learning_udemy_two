@@ -1,0 +1,118 @@
+.modal-box {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  max-width: 400px;
+  margin: 40px auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.modal-title {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 16px;
+  font-size: 1.5rem; // Increase font size for the title
+}
+
+.modal-image {
+  width: 50%; // Make the image responsive
+  border-radius: 8px; // Rounded corners for the image
+  margin-bottom: 16px; // Space below the image
+}
+
+.modal-description {
+  text-align: center;
+  margin-bottom: 16px; // Space below description
+  font-size: 1rem; // Adjust font size
+}
+
+.modal-price {
+  font-weight: bold; // Make price bold
+  margin-bottom: 16px; // Space below price
+}
+
+//не используется
+.modal-button {
+  display: block;
+  width: 100%;
+  background-color: #1976d2;
+  color: white;
+  padding: 12px;
+  text-transform: none;
+
+  &:hover {
+      background-color: #115293;
+  }
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+.modal-nickname {
+  margin: 10px 0;
+}
+
+.modal-buy-button {
+  margin: 10px 0;
+}
+
+.modal {
+  padding: 20px;
+}
+
+.modal-description-btn {
+  background-color: #e0e0e0;
+  color: #333;
+  border-radius: 25px;
+  padding: 10px 20px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  .arrow-down {
+      margin-left: 10px;
+      font-size: 14px;
+      transition: transform 0.3s ease;
+  }
+
+  &:hover {
+      background-color: #d0d0d0;
+  }
+}
+
+.modal-description-btn-active {
+  background-color: #c0c0c0;
+  color: #000;
+
+  .arrow-down {
+      transform: rotate(180deg);
+  }
+}
+
+.modal-description {
+  display: none;
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 1.6;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.modal-description-active {
+  display: block;
+  opacity: 1;
+  max-height: 100px;
+  overflow: auto;
+}

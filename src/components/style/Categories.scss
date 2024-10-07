@@ -1,19 +1,28 @@
 .categories {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-  }
-  
-  .category-btn {
-    background-color: #008cff;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    cursor: pointer;
-  }
-  
-  .category-btn.server {
-    background-color: orangered;
-  }
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f0f0f0; /* Фон контейнера категорий */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Добавлена тень */
+}
+
+.category-btn {
+  background-color: #008cff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease, background-color 0.2s ease; /* Анимация при наведении */
+}
+
+.category-btn:hover {
+  background-color: #007bff; /* Меняем цвет при наведении */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Тень при наведении */
+}
+
+.category-btn.server {
+  background-color: orangered;
+}
